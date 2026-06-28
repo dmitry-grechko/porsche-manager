@@ -1,0 +1,452 @@
+{
+  "glb": "/models/components/engine.glb",
+  "parts": [
+    {
+      "id": "intake-manifold",
+      "node": "intakeManifold",
+      "label": "Intake Manifold",
+      "assembly": "Induction",
+      "system": "Engine",
+      "tier": "primary",
+      "partNumber": null,
+      "function": "Distributes filtered air from the throttle body through twin bridge tubes into both cylinder banks."
+    },
+    {
+      "id": "throttle-body",
+      "node": "throttleBody",
+      "label": "Throttle Body",
+      "assembly": "Induction",
+      "system": "Engine",
+      "tier": "primary",
+      "partNumber": null,
+      "function": "Regulates the volume of air entering the intake plenum based on driver throttle demand."
+    },
+    {
+      "id": "maf-sensor",
+      "node": "mafSensor",
+      "label": "MAF Sensor / Air Intake",
+      "assembly": "Induction",
+      "system": "Engine",
+      "tier": "primary",
+      "partNumber": "98111013000",
+      "componentId": "airfilter",
+      "function": "Measures the mass of incoming air in the intake snorkel so the ECU can meter fuel."
+    },
+    {
+      "id": "air-oil-separator",
+      "node": "airOilSeparator",
+      "label": "Air-Oil Separator (AOS)",
+      "assembly": "Induction",
+      "system": "Engine",
+      "tier": "primary",
+      "partNumber": null,
+      "function": "Separates oil mist from crankcase blow-by gases and returns clean vapor to the intake."
+    },
+    {
+      "id": "intake-camshaft",
+      "node": "camshaft_intake",
+      "label": "Intake Camshafts",
+      "assembly": "Valvetrain",
+      "system": "Engine",
+      "tier": "primary",
+      "partNumber": null,
+      "function": "Open and close the intake valves in time with the crankshaft via cam lobes."
+    },
+    {
+      "id": "exhaust-camshaft",
+      "node": "camshaft_exhaust",
+      "label": "Exhaust Camshafts",
+      "assembly": "Valvetrain",
+      "system": "Engine",
+      "tier": "primary",
+      "partNumber": null,
+      "function": "Open and close the exhaust valves in time with the crankshaft via cam lobes."
+    },
+    {
+      "id": "timing-chain",
+      "node": "timingChain",
+      "label": "Timing Chain & Tensioner",
+      "assembly": "Valvetrain",
+      "system": "Engine",
+      "tier": "primary",
+      "partNumber": "0PB109508B",
+      "function": "Links the crankshaft to the camshafts to keep valve timing in sync; the tensioner holds chain tension."
+    },
+    {
+      "id": "crankshaft",
+      "node": "crankshaft",
+      "label": "Crankshaft",
+      "assembly": "Rotating Assembly",
+      "system": "Engine",
+      "tier": "primary",
+      "partNumber": null,
+      "function": "Converts the reciprocating motion of the pistons into rotational output torque."
+    },
+    {
+      "id": "pistons",
+      "node": "pistons",
+      "label": "Pistons & Rods",
+      "assembly": "Rotating Assembly",
+      "system": "Engine",
+      "tier": "primary",
+      "partNumber": null,
+      "function": "Compress the air-fuel mixture and transmit combustion force, via the connecting rods, to the crankshaft."
+    },
+    {
+      "id": "crank-pulley",
+      "node": "crankPulley",
+      "label": "Crank Pulley / Vibration Damper",
+      "assembly": "Rotating Assembly",
+      "system": "Engine",
+      "tier": "primary",
+      "partNumber": null,
+      "function": "Drives the serpentine belt and damps torsional vibration of the crankshaft."
+    },
+    {
+      "id": "fuel-rail",
+      "node": "fuelRail",
+      "label": "Fuel Rail & Injectors",
+      "assembly": "Fuel & Ignition",
+      "system": "Engine",
+      "tier": "primary",
+      "partNumber": "9A111012815",
+      "function": "Distributes pressurized fuel to the six injectors, which spray metered fuel into each cylinder."
+    },
+    {
+      "id": "coil-packs",
+      "node": "coilPacks",
+      "label": "Ignition Coil Packs (x6)",
+      "assembly": "Fuel & Ignition",
+      "system": "Engine",
+      "tier": "primary",
+      "partNumber": "9A160210407",
+      "componentId": "plugs",
+      "function": "Step up battery voltage to fire each spark plug at the correct instant."
+    },
+    {
+      "id": "spark-plugs",
+      "node": "sparkPlugs",
+      "label": "Spark Plugs (x6)",
+      "assembly": "Fuel & Ignition",
+      "system": "Engine",
+      "tier": "primary",
+      "partNumber": "99917015190",
+      "componentId": "plugs",
+      "function": "Ignite the compressed air-fuel mixture in each combustion chamber."
+    },
+    {
+      "id": "alternator",
+      "node": "alternator",
+      "label": "Alternator",
+      "assembly": "Accessory Drive",
+      "system": "Engine",
+      "tier": "primary",
+      "partNumber": null,
+      "function": "Generates electrical power and charges the battery while the engine runs."
+    },
+    {
+      "id": "ac-compressor",
+      "node": "acCompressor",
+      "label": "A/C Compressor",
+      "assembly": "Accessory Drive",
+      "system": "Engine",
+      "tier": "primary",
+      "partNumber": "9A112601105",
+      "function": "Pressurizes refrigerant to drive the air-conditioning cooling cycle."
+    },
+    {
+      "id": "water-pump",
+      "node": "waterPump",
+      "label": "Water Pump",
+      "assembly": "Accessory Drive",
+      "system": "Engine",
+      "tier": "primary",
+      "partNumber": "0PB121035A",
+      "function": "Circulates coolant between the engine and radiators to regulate temperature."
+    },
+    {
+      "id": "serpentine-belt",
+      "node": "serpentineBelt",
+      "label": "Serpentine Belt & Pulleys",
+      "assembly": "Accessory Drive",
+      "system": "Engine",
+      "tier": "primary",
+      "partNumber": null,
+      "componentId": "belt",
+      "function": "Transfers crank rotation to the alternator, A/C compressor and water pump; tensioner and idler pulleys guide it."
+    },
+    {
+      "id": "oil-filter-housing",
+      "node": "oilFilterHousing",
+      "label": "Oil Filter Housing",
+      "assembly": "Lubrication & Cooling",
+      "system": "Engine",
+      "tier": "primary",
+      "partNumber": "0PB115466A",
+      "componentId": "oil",
+      "function": "Holds the cartridge oil filter that removes contaminants from circulating oil."
+    },
+    {
+      "id": "oil-pump",
+      "node": "oilPump",
+      "label": "Oil Pump",
+      "assembly": "Lubrication & Cooling",
+      "system": "Engine",
+      "tier": "primary",
+      "partNumber": "9A110705012",
+      "function": "Pressurizes and circulates oil through the engine's lubrication galleries."
+    },
+    {
+      "id": "thermostat-housing",
+      "node": "thermostatHousing",
+      "label": "Thermostat Housing",
+      "assembly": "Lubrication & Cooling",
+      "system": "Engine",
+      "tier": "primary",
+      "partNumber": "0PB121110A",
+      "function": "Houses the thermostat that regulates coolant flow so the engine reaches operating temperature."
+    },
+    {
+      "id": "cylinder-head-l",
+      "node": "cylHead_L",
+      "label": "Cylinder Head (Left Bank)",
+      "assembly": "Structure",
+      "system": "Engine",
+      "tier": "primary",
+      "partNumber": null,
+      "function": "Caps the left bank cylinders, carrying the valves and combustion chambers."
+    },
+    {
+      "id": "cylinder-head-r",
+      "node": "cylHead_R",
+      "label": "Cylinder Head (Right Bank)",
+      "assembly": "Structure",
+      "system": "Engine",
+      "tier": "primary",
+      "partNumber": null,
+      "function": "Caps the right bank cylinders, carrying the valves and combustion chambers."
+    },
+    {
+      "id": "crankcase",
+      "node": "crankcase",
+      "label": "Crankcase",
+      "assembly": "Structure",
+      "system": "Engine",
+      "tier": "primary",
+      "partNumber": null,
+      "function": "The split-case aluminum block housing the crankshaft, bores and main bearings."
+    },
+    {
+      "id": "sump",
+      "node": "sump",
+      "label": "Sump / Oil Pan",
+      "assembly": "Structure",
+      "system": "Engine",
+      "tier": "primary",
+      "partNumber": null,
+      "function": "Reservoir at the bottom of the engine that collects and holds the oil supply."
+    },
+    {
+      "id": "starter-motor",
+      "node": "starterMotor",
+      "label": "Starter Motor",
+      "assembly": "Structure",
+      "system": "Engine",
+      "tier": "primary",
+      "partNumber": null,
+      "function": "Cranks the engine over against the flywheel ring gear to start it."
+    },
+
+    {
+      "id": "cam-cover-l",
+      "node": "camCover_L",
+      "label": "Cam Cover (Left Bank)",
+      "assembly": "Valvetrain",
+      "system": "Engine",
+      "tier": "sub",
+      "parent": "cylinder-head-l",
+      "partNumber": null,
+      "function": "Seals the top of the left cylinder head over the camshafts and retains oil in the valvetrain."
+    },
+    {
+      "id": "cam-cover-r",
+      "node": "camCover_R",
+      "label": "Cam Cover (Right Bank)",
+      "assembly": "Valvetrain",
+      "system": "Engine",
+      "tier": "sub",
+      "parent": "cylinder-head-r",
+      "partNumber": null,
+      "function": "Seals the top of the right cylinder head over the camshafts and retains oil in the valvetrain."
+    },
+    {
+      "id": "variocam-actuator",
+      "node": "varioCamActuator",
+      "label": "VarioCam Actuators",
+      "assembly": "Valvetrain",
+      "system": "Engine",
+      "tier": "sub",
+      "parent": "intake-camshaft",
+      "partNumber": null,
+      "function": "Oil-pressure solenoids that advance and retard intake cam timing for VarioCam variable valve timing."
+    },
+    {
+      "id": "timing-chain-tensioner",
+      "node": "timingChainTensioner",
+      "label": "Timing Chain Tensioner",
+      "assembly": "Valvetrain",
+      "system": "Engine",
+      "tier": "sub",
+      "parent": "timing-chain",
+      "partNumber": "0PB109508B",
+      "function": "Hydraulic plunger and shoe that takes up slack in the timing chain to keep cam/crank timing exact."
+    },
+    {
+      "id": "crank-sprocket",
+      "node": "crankSprocket",
+      "label": "Crankshaft Sprocket",
+      "assembly": "Valvetrain",
+      "system": "Engine",
+      "tier": "sub",
+      "parent": "timing-chain",
+      "partNumber": null,
+      "function": "Toothed gear on the crankshaft nose that drives the timing chain."
+    },
+    {
+      "id": "flywheel",
+      "node": "flywheel",
+      "label": "Flywheel & Ring Gear",
+      "assembly": "Rotating Assembly",
+      "system": "Engine",
+      "tier": "sub",
+      "parent": "crankshaft",
+      "partNumber": null,
+      "function": "Stores rotational inertia at the crank rear and carries the ring gear the starter engages."
+    },
+    {
+      "id": "connecting-rods",
+      "node": "conRods",
+      "label": "Connecting Rods",
+      "assembly": "Rotating Assembly",
+      "system": "Engine",
+      "tier": "sub",
+      "parent": "pistons",
+      "partNumber": null,
+      "function": "Link each piston to its crankpin, transmitting combustion force to the crankshaft."
+    },
+    {
+      "id": "injectors",
+      "node": "injectors",
+      "label": "Fuel Injectors (x6)",
+      "assembly": "Fuel & Ignition",
+      "system": "Engine",
+      "tier": "sub",
+      "parent": "fuel-rail",
+      "partNumber": "9A111012815",
+      "function": "Spray finely atomized, metered fuel directly into each combustion chamber for DFI."
+    },
+    {
+      "id": "alternator-pulley",
+      "node": "alternatorPulley",
+      "label": "Alternator Pulley",
+      "assembly": "Accessory Drive",
+      "system": "Engine",
+      "tier": "sub",
+      "parent": "alternator",
+      "partNumber": null,
+      "function": "Belt-driven pulley with one-way clutch that spins the alternator rotor."
+    },
+    {
+      "id": "tensioner-pulley",
+      "node": "tensionerPulley",
+      "label": "Belt Tensioner Pulley",
+      "assembly": "Accessory Drive",
+      "system": "Engine",
+      "tier": "sub",
+      "parent": "serpentine-belt",
+      "partNumber": null,
+      "componentId": "belt",
+      "function": "Spring-loaded pulley that keeps the serpentine belt under constant tension."
+    },
+    {
+      "id": "idler-pulley",
+      "node": "idlerPulley",
+      "label": "Idler Pulley",
+      "assembly": "Accessory Drive",
+      "system": "Engine",
+      "tier": "sub",
+      "parent": "serpentine-belt",
+      "partNumber": null,
+      "componentId": "belt",
+      "function": "Smooth pulley that routes and guides the serpentine belt around the accessory drive."
+    },
+    {
+      "id": "oil-filler-neck",
+      "node": "oilFillerNeck",
+      "label": "Oil Filler Neck & Cap",
+      "assembly": "Lubrication & Cooling",
+      "system": "Engine",
+      "tier": "sub",
+      "parent": "oil-filter-housing",
+      "partNumber": null,
+      "componentId": "oil",
+      "function": "Capped tube where fresh engine oil is poured into the crankcase."
+    },
+    {
+      "id": "oil-pickup-tube",
+      "node": "oilPickupTube",
+      "label": "Oil Pickup Tube & Strainer",
+      "assembly": "Lubrication & Cooling",
+      "system": "Engine",
+      "tier": "sub",
+      "parent": "oil-pump",
+      "partNumber": "9A110707510",
+      "function": "Draws oil from the sump through a strainer screen into the oil pump."
+    },
+    {
+      "id": "motor-mount-l",
+      "node": "motorMount_L",
+      "label": "Engine Mount (Left)",
+      "assembly": "Structure",
+      "system": "Engine",
+      "tier": "sub",
+      "parent": "crankcase",
+      "partNumber": null,
+      "function": "Hydraulic mount that supports the left side of the engine and isolates vibration from the chassis."
+    },
+    {
+      "id": "motor-mount-r",
+      "node": "motorMount_R",
+      "label": "Engine Mount (Right)",
+      "assembly": "Structure",
+      "system": "Engine",
+      "tier": "sub",
+      "parent": "crankcase",
+      "partNumber": null,
+      "function": "Hydraulic mount that supports the right side of the engine and isolates vibration from the chassis."
+    },
+    {
+      "id": "bellhousing",
+      "node": "bellhousing",
+      "label": "Bellhousing",
+      "assembly": "Structure",
+      "system": "Engine",
+      "tier": "sub",
+      "parent": "crankcase",
+      "partNumber": null,
+      "function": "Bolts to the rear of the crankcase and mates the engine to the transaxle, enclosing the flywheel."
+    },
+    {
+      "id": "dipstick-tube",
+      "node": "dipstickTube",
+      "label": "Dipstick Tube",
+      "assembly": "Lubrication & Cooling",
+      "system": "Engine",
+      "tier": "sub",
+      "parent": "sump",
+      "partNumber": null,
+      "componentId": "oil",
+      "function": "Guides the oil-level dipstick down into the sump for checking the oil level."
+    }
+  ]
+}

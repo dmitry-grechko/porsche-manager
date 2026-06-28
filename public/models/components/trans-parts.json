@@ -1,0 +1,116 @@
+{
+  "glb": "/models/components/trans.glb",
+  "parts": [
+    {
+      "id": "pdk-transaxle",
+      "node": "gearCase",
+      "label": "PDK Transaxle Case",
+      "assembly": "Gearbox",
+      "system": "Transmission",
+      "tier": "primary",
+      "partNumber": "9G230002105",
+      "componentId": "trans",
+      "function": "The main alloy gear case housing the 7-speed PDK dual-clutch gear sets and shafts."
+    },
+    {
+      "id": "bell-housing",
+      "node": "bellHousing",
+      "label": "Clutch / Bell Housing",
+      "assembly": "Gearbox",
+      "system": "Transmission",
+      "tier": "primary",
+      "partNumber": null,
+      "function": "The bell housing at the engine end that encloses the dual-clutch pack and mates to the engine."
+    },
+    {
+      "id": "bell-flange",
+      "node": "bellFlange",
+      "label": "Engine Mounting Flange",
+      "assembly": "Gearbox",
+      "system": "Transmission",
+      "tier": "primary",
+      "partNumber": null,
+      "function": "The bolt flange that fixes the transaxle to the rear face of the engine block."
+    },
+    {
+      "id": "final-drive",
+      "node": "finalDrive",
+      "label": "Final Drive / Differential",
+      "assembly": "Final Drive",
+      "system": "Transmission",
+      "tier": "primary",
+      "partNumber": null,
+      "function": "The final-drive gear set and differential that splits torque to the two rear driveshafts."
+    },
+    {
+      "id": "output-flange-l",
+      "node": "outputFlangeL",
+      "label": "Output Flange (Left)",
+      "assembly": "Final Drive",
+      "system": "Transmission",
+      "tier": "primary",
+      "partNumber": null,
+      "function": "Connects the differential to the left rear driveshaft / CV joint."
+    },
+    {
+      "id": "output-flange-r",
+      "node": "outputFlangeR",
+      "label": "Output Flange (Right)",
+      "assembly": "Final Drive",
+      "system": "Transmission",
+      "tier": "primary",
+      "partNumber": null,
+      "function": "Connects the differential to the right rear driveshaft / CV joint."
+    },
+    {
+      "id": "selector-housing",
+      "node": "selectorHousing",
+      "label": "Selector / Mechatronic Housing",
+      "assembly": "Controls",
+      "system": "Transmission",
+      "tier": "primary",
+      "partNumber": "9G242603310",
+      "function": "Houses the gear-selection mechanism and shift control linkage on top of the case."
+    },
+    {
+      "id": "mechatronic",
+      "node": "mechatronic",
+      "label": "Mechatronic Control Unit",
+      "assembly": "Controls",
+      "system": "Transmission",
+      "tier": "primary",
+      "partNumber": null,
+      "function": "The hydraulic/electronic control module that actuates the clutches and gear shifts."
+    },
+    {
+      "id": "rear-mount",
+      "node": "rearMount",
+      "label": "Transaxle Mount",
+      "assembly": "Mounting",
+      "system": "Transmission",
+      "tier": "primary",
+      "partNumber": null,
+      "function": "The rear rubber mount that supports the gearbox tail and isolates driveline vibration."
+    },
+    {
+      "id": "drain-plug",
+      "node": "drainPlug",
+      "label": "Fluid Drain Plug",
+      "assembly": "Service",
+      "system": "Transmission",
+      "tier": "primary",
+      "partNumber": null,
+      "function": "Bottom plug drained to change the PDK transmission fluid."
+    },
+    {
+      "id": "fill-plug",
+      "node": "fillPlug",
+      "label": "Fluid Fill Plug",
+      "assembly": "Service",
+      "system": "Transmission",
+      "tier": "primary",
+      "partNumber": null,
+      "function": "Side plug used to set the PDK fluid level when refilling."
+    }
+  ]
+}

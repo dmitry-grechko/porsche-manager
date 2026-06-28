@@ -1,0 +1,64 @@
+# Supabase project config. The CLI reads this for `link`, `db push`, and local dev.
+# Only the schema migrations under supabase/migrations are applied to the hosted
+# project by `npm run db:push` — the [auth] block below mirrors the dashboard
+# settings you set once in Authentication → URL Configuration (it governs the local
+# stack and serves as documentation of the intended hosted config).
+
+project_id = "flatsix-981-garage"
+
+[api]
+enabled = true
+port = 54321
+schemas = ["public"]
+extra_search_path = ["public", "extensions"]
+max_rows = 1000
+
+[db]
+port = 54322
+major_version = 15
+
+[studio]
+enabled = true
+port = 54323
+
+# Magic-link (passwordless) email auth.
+[auth]
+enabled = true
+# For local dev. In the hosted dashboard set Site URL to your Vercel domain.
+site_url = "http://localhost:3000"
+additional_redirect_urls = ["http://localhost:3000/auth/callback"]
+jwt_expiry = 3600
+enable_signup = true
+
+[auth.email]
+enable_signup = true
+# Magic link / OTP — no password required.
+enable_confirmations = false
+
+# Branded HTML email templates (FLAT·SIX design system). Paths are relative to
+# the project root. In the hosted dashboard, paste the same HTML under
+# Authentication → Email Templates (the CLI only applies these to the local stack).
+[auth.email.template.magic_link]
+subject = "Your FLAT·SIX sign-in link"
+content_path = "./supabase/templates/magic_link.html"
+
+[auth.email.template.confirmation]
+subject = "Confirm your FLAT·SIX account"
+content_path = "./supabase/templates/confirmation.html"
+
+[auth.email.template.recovery]
+subject = "Reset your FLAT·SIX password"
+content_path = "./supabase/templates/recovery.html"
+
+[auth.email.template.invite]
+subject = "You're invited to FLAT·SIX"
+content_path = "./supabase/templates/invite.html"
+
+[auth.email.template.email_change]
+subject = "Confirm your new FLAT·SIX email"
+content_path = "./supabase/templates/email_change.html"
+
+# Local-only mailbox for testing magic links without real email (supabase start).
+[inbucket]
+enabled = true
+port = 54324

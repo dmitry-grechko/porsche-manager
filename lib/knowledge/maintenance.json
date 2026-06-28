@@ -1,0 +1,153 @@
+[
+  {
+    "id": "maint-oil",
+    "task": "Engine oil & filter change",
+    "intervalMiles": 10000,
+    "intervalMonths": 12,
+    "system": "Engine",
+    "notes": "Factory interval is annual / 10,000 mi. Many owners shorten to 5,000-7,500 mi for engine health. Use Porsche A40-approved 0W-40.",
+    "source": "https://www.pcarwise.com/local-help/porsche-maintenance-schedules/boxster-maintenance/981-boxster-maintenance-schedule/"
+  },
+  {
+    "id": "maint-inspection",
+    "task": "Multipoint vehicle inspection",
+    "intervalMiles": 10000,
+    "intervalMonths": 12,
+    "system": "Body",
+    "notes": "Part of the annual service.",
+    "source": "https://www.pcarwise.com/local-help/porsche-maintenance-schedules/boxster-maintenance/981-boxster-maintenance-schedule/"
+  },
+  {
+    "id": "maint-roof-drains",
+    "task": "Clear convertible roof drains",
+    "intervalMiles": 10000,
+    "intervalMonths": 12,
+    "system": "Body",
+    "notes": "Boxster/Spyder only. Prevents under-seat control-module water damage.",
+    "source": "https://www.pcarwise.com/local-help/porsche-maintenance-schedules/boxster-maintenance/981-boxster-maintenance-schedule/"
+  },
+  {
+    "id": "maint-battery-test",
+    "task": "Battery CCA test",
+    "intervalMiles": 10000,
+    "intervalMonths": 12,
+    "system": "Electrical",
+    "notes": "Checked annually.",
+    "source": "https://www.pcarwise.com/local-help/porsche-maintenance-schedules/boxster-maintenance/981-boxster-maintenance-schedule/"
+  },
+  {
+    "id": "maint-brake-inspect",
+    "task": "Brake pad / rotor inspection",
+    "intervalMiles": 10000,
+    "intervalMonths": 12,
+    "system": "Brakes",
+    "notes": "Inspect at each annual service; replace on wear (pad min ~2 mm friction material).",
+    "source": "https://www.pcarwise.com/local-help/porsche-maintenance-schedules/boxster-maintenance/981-boxster-maintenance-schedule/"
+  },
+  {
+    "id": "maint-brake-fluid",
+    "task": "Brake fluid flush",
+    "intervalMonths": 24,
+    "system": "Brakes",
+    "notes": "Every 2 years regardless of mileage (fluid is hygroscopic). Use DOT 4 Low Viscosity.",
+    "source": "https://www.pcarwise.com/local-help/porsche-maintenance-schedules/boxster-maintenance/981-boxster-maintenance-schedule/"
+  },
+  {
+    "id": "maint-cabin-filter",
+    "task": "Cabin / pollen filter replacement",
+    "intervalMiles": 20000,
+    "intervalMonths": 24,
+    "system": "HVAC",
+    "notes": "Part of the minor (intermediate) service.",
+    "source": "https://www.pcarwise.com/local-help/porsche-maintenance-schedules/boxster-maintenance/981-boxster-maintenance-schedule/"
+  },
+  {
+    "id": "maint-cabin-prefilter",
+    "task": "Cabin pre-filter element replacement",
+    "intervalMiles": 20000,
+    "intervalMonths": 24,
+    "system": "HVAC",
+    "notes": "Part of the minor service.",
+    "source": "https://www.pcarwise.com/local-help/porsche-maintenance-schedules/boxster-maintenance/981-boxster-maintenance-schedule/"
+  },
+  {
+    "id": "maint-air-filter",
+    "task": "Engine air intake filter replacement",
+    "intervalMiles": 20000,
+    "intervalMonths": 24,
+    "system": "Engine",
+    "notes": "Part of the minor service. The 981 has two air boxes (left & right).",
+    "source": "https://www.pcarwise.com/local-help/porsche-maintenance-schedules/boxster-maintenance/981-boxster-maintenance-schedule/"
+  },
+  {
+    "id": "maint-spark-plugs",
+    "task": "Spark plug replacement",
+    "intervalMiles": 40000,
+    "intervalMonths": 48,
+    "system": "Engine",
+    "notes": "Major service ('C'). Six plugs. Replace even on low-mileage aged cars to avoid seizing in the head.",
+    "source": "https://www.pcarwise.com/local-help/porsche-maintenance-schedules/boxster-maintenance/981-boxster-maintenance-schedule/"
+  },
+  {
+    "id": "maint-belt",
+    "task": "Drive (poly-V / serpentine) belt replacement",
+    "intervalMiles": 60000,
+    "intervalMonths": 72,
+    "system": "Engine",
+    "notes": "Replace around 6 years / 60k mi.",
+    "source": "https://www.planet-9.com/threads/981-maintenance-schedule-and-to-do-items-summary.104324/"
+  },
+  {
+    "id": "maint-throttle-body",
+    "task": "Throttle body cleaning",
+    "intervalMiles": 60000,
+    "intervalMonths": 72,
+    "system": "Engine",
+    "notes": "At about 6 years / 60k mi.",
+    "source": "https://www.planet-9.com/threads/981-maintenance-schedule-and-to-do-items-summary.104324/"
+  },
+  {
+    "id": "maint-pdk-oil",
+    "task": "PDK transmission oil & filter service",
+    "intervalMiles": 120000,
+    "intervalMonths": 144,
+    "system": "Transmission",
+    "notes": "Factory interval is 120k mi, but specialists and owners strongly recommend ~40k mi / 4 yr to protect the Mechatronic unit. PDK only.",
+    "source": "https://www.planet-9.com/threads/981-maintenance-schedule-and-to-do-items-summary.104324/"
+  },
+  {
+    "id": "maint-pdk-clutch-fluid",
+    "task": "PDK clutch fluid service",
+    "intervalMiles": 120000,
+    "intervalMonths": 144,
+    "system": "Transmission",
+    "notes": "Same factory cadence as PDK oil; do earlier per specialist advice. Requires PIWIS fill mode. PDK only.",
+    "source": "https://www.planet-9.com/threads/981-maintenance-schedule-and-to-do-items-summary.104324/"
+  },
+  {
+    "id": "maint-manual-fluid",
+    "task": "Manual transmission fluid change",
+    "intervalMiles": 120000,
+    "intervalMonths": 144,
+    "system": "Transmission",
+    "notes": "Factory interval 12 yr / 120k for manuals. Use 75W-90 GL-5. Manual only.",
+    "source": "https://www.pcarwise.com/local-help/porsche-maintenance-schedules/boxster-maintenance/981-boxster-maintenance-schedule/"
+  },
+  {
+    "id": "maint-coolant",
+    "task": "Coolant inspection / replacement",
+    "intervalMonths": 144,
+    "system": "Cooling",
+    "notes": "Porsche lists the G40 coolant as lifetime/no fixed interval. Inspect condition at each service and replace if degraded (a 12-yr replacement is a common owner practice).",
+    "source": "https://www.pcarwise.com/local-help/porsche-maintenance-schedules/boxster-maintenance/981-boxster-maintenance-schedule/"
+  },
+  {
+    "id": "maint-tyres",
+    "task": "Tyre inspection & rotation",
+    "intervalMiles": 10000,
+    "intervalMonths": 12,
+    "system": "Wheels",
+    "notes": "Inspect tread, age, and pressures at every service. Note the 981's staggered fitment limits front-to-rear rotation; rotate side-to-side per wear if at all.",
+    "source": "https://www.pcarwise.com/local-help/porsche-maintenance-schedules/boxster-maintenance/981-boxster-maintenance-schedule/"
+  }
+]

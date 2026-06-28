@@ -1,0 +1,116 @@
+{
+  "glb": "/models/components/exhaust.glb",
+  "parts": [
+    {
+      "id": "header-r",
+      "node": "headerBank_R",
+      "label": "Header (Right Bank)",
+      "assembly": "Manifold",
+      "system": "Exhaust",
+      "tier": "primary",
+      "partNumber": "981113212EX",
+      "componentId": "exhaust",
+      "function": "Tubular header collecting exhaust from the three right-bank cylinders into a single collector."
+    },
+    {
+      "id": "header-l",
+      "node": "headerBank_L",
+      "label": "Header (Left Bank)",
+      "assembly": "Manifold",
+      "system": "Exhaust",
+      "tier": "primary",
+      "partNumber": "981113211EX",
+      "function": "Tubular header collecting exhaust from the three left-bank cylinders into a single collector."
+    },
+    {
+      "id": "cat-r",
+      "node": "cat_R",
+      "label": "Catalytic Converter (Right)",
+      "assembly": "Aftertreatment",
+      "system": "Exhaust",
+      "tier": "primary",
+      "partNumber": null,
+      "function": "Converts harmful right-bank exhaust gases into less-toxic emissions over a ceramic catalyst."
+    },
+    {
+      "id": "cat-l",
+      "node": "cat_L",
+      "label": "Catalytic Converter (Left)",
+      "assembly": "Aftertreatment",
+      "system": "Exhaust",
+      "tier": "primary",
+      "partNumber": null,
+      "function": "Converts harmful left-bank exhaust gases into less-toxic emissions over a ceramic catalyst."
+    },
+    {
+      "id": "muffler-r",
+      "node": "muffler_R",
+      "label": "Muffler (Right)",
+      "assembly": "Silencing",
+      "system": "Exhaust",
+      "tier": "primary",
+      "partNumber": null,
+      "function": "Rear silencer on the right side that attenuates exhaust noise before the tailpipes."
+    },
+    {
+      "id": "muffler-l",
+      "node": "muffler_L",
+      "label": "Muffler (Left)",
+      "assembly": "Silencing",
+      "system": "Exhaust",
+      "tier": "primary",
+      "partNumber": null,
+      "function": "Rear silencer on the left side that attenuates exhaust noise before the tailpipes."
+    },
+    {
+      "id": "tailpipe-r",
+      "node": "tip_R_0",
+      "label": "Tailpipe Tip (Right)",
+      "assembly": "Silencing",
+      "system": "Exhaust",
+      "tier": "primary",
+      "partNumber": null,
+      "function": "Polished right-side tailpipe tip where exhaust exits the system."
+    },
+    {
+      "id": "tailpipe-l",
+      "node": "tip_L_0",
+      "label": "Tailpipe Tip (Left)",
+      "assembly": "Silencing",
+      "system": "Exhaust",
+      "tier": "primary",
+      "partNumber": null,
+      "function": "Polished left-side tailpipe tip where exhaust exits the system."
+    },
+    {
+      "id": "pse-valve",
+      "node": "pseValve",
+      "label": "PSE Sport Exhaust Valve",
+      "assembly": "Silencing",
+      "system": "Exhaust",
+      "tier": "primary",
+      "partNumber": null,
+      "function": "Vacuum-actuated bypass valve that opens the sport exhaust path for a louder note."
+    },
+    {
+      "id": "hanger-r",
+      "node": "hanger_R",
+      "label": "Exhaust Hanger (Right)",
+      "assembly": "Mounting",
+      "system": "Exhaust",
+      "tier": "primary",
+      "partNumber": null,
+      "function": "Rubber hanger that suspends the right side of the exhaust from the body."
+    },
+    {
+      "id": "hanger-l",
+      "node": "hanger_L",
+      "label": "Exhaust Hanger (Left)",
+      "assembly": "Mounting",
+      "system": "Exhaust",
+      "tier": "primary",
+      "partNumber": null,
+      "function": "Rubber hanger that suspends the left side of the exhaust from the body."
+    }
+  ]
+}

@@ -1,0 +1,328 @@
+{
+  "vehicle": {
+    "model": "Boxster S",
+    "generation": "981",
+    "year": 2013,
+    "engine": "3.4L flat-six (MA1)"
+  },
+  "sources": [
+    "https://shop.porscheontario.com/2013-porsche-boxster-s-gas_3.4_6-transaxle_automatic_dual_clutch_7-parts/",
+    "https://shop.porscheontario.com/2013-porsche-boxster-s-gas_3.4_6-transaxle_automatic_dual_clutch_7-engine-air_intake/",
+    "https://shop.porscheontario.com/2013-porsche-boxster-s-gas_3.4_6-transaxle_automatic_dual_clutch_7-engine-oil_pump/",
+    "https://shop.porscheontario.com/2013-porsche-boxster-s-gas_3.4_6-transaxle_automatic_dual_clutch_7-maintenance_lubrication-filters/",
+    "https://shop.porscheontario.com/2013-porsche-boxster-s-gas_3.4_6-transaxle_automatic_dual_clutch_7-electrical-ignition_system/",
+    "https://shop.porscheontario.com/2013-porsche-boxster-s-gas_3.4_6-transaxle_automatic_dual_clutch_7-cooling_system-water_pump/",
+    "https://shop.porscheontario.com/2013-porsche-boxster-s-gas_3.4_6-transaxle_automatic_dual_clutch_7-cooling_system-radiator/",
+    "https://shop.porscheontario.com/2013-porsche-boxster-s-gas_3.4_6-transaxle_automatic_dual_clutch_7-brakes-front_brakes/",
+    "https://shop.porscheontario.com/2013-porsche-boxster-s-gas_3.4_6-transaxle_automatic_dual_clutch_7-fuel_system-fuel_injection/",
+    "https://shop.porscheontario.com/2013-porsche-boxster-s-gas_3.4_6-transaxle_automatic_dual_clutch_7-exhaust_system-exhaust_manifold/",
+    "https://shop.porscheontario.com/2013-porsche-boxster-s-gas_3.4_6-transaxle_automatic_dual_clutch_7-steering-steering_gear_linkage/",
+    "https://shop.porscheontario.com/2013-porsche-boxster-s-gas_3.4_6-transaxle_automatic_dual_clutch_7-hvac-compressor/",
+    "https://shop.porscheontario.com/2013-porsche-boxster-s-gas_3.4_6-transaxle_automatic_dual_clutch_7-automatic_transaxle-automatic_transaxle/",
+    "https://shop.porscheontario.com/2013-porsche-boxster-s-gas_3.4_6-transaxle_automatic_dual_clutch_7-front_suspension-shocks_components/",
+    "https://shop.porscheontario.com/2013-porsche-boxster-s-gas_3.4_6-transaxle_automatic_dual_clutch_7-front_suspension-wheels/",
+    "https://shop.porscheontario.com/2013-porsche-boxster-s-gas_3.4_6-transaxle_automatic_dual_clutch_7-body_hardware-hood/"
+  ],
+  "systems": [
+    {
+      "id": "engine",
+      "label": "Engine",
+      "components": [
+        {
+          "id": "air-filter",
+          "name": "Air Filter",
+          "system": "engine",
+          "partNumber": "98111013000",
+          "alternateNumbers": [],
+          "torque": null,
+          "notes": "Fits left and right air boxes. Air Cleaner Assy housings: 98111002202 (right) / 98111002102 (left).",
+          "sourceUrl": "https://shop.porscheontario.com/2013-porsche-boxster-s-gas_3.4_6-transaxle_automatic_dual_clutch_7-engine-air_intake/",
+          "diyDifficulty": "easy",
+          "function": "Traps dust and debris from intake air before it reaches the engine."
+        },
+        {
+          "id": "oil-filter",
+          "name": "Oil Filter (with housing/seal)",
+          "system": "engine",
+          "partNumber": "0PB115466A",
+          "alternateNumbers": ["0PB115403A", "0PB115499A"],
+          "torque": null,
+          "notes": "0PB115403A is the oil filter housing; 0PB115499A is the housing seal.",
+          "sourceUrl": "https://shop.porscheontario.com/2013-porsche-boxster-s-gas_3.4_6-transaxle_automatic_dual_clutch_7-maintenance_lubrication-filters/",
+          "diyDifficulty": "easy",
+          "function": "Filters contaminants out of the circulating engine oil."
+        },
+        {
+          "id": "oil-pump",
+          "name": "Oil Pump",
+          "system": "engine",
+          "partNumber": "9A110705012",
+          "alternateNumbers": ["9A110707510"],
+          "torque": null,
+          "notes": "9A110707510 is the oil pick-up tube/strainer.",
+          "sourceUrl": "https://shop.porscheontario.com/2013-porsche-boxster-s-gas_3.4_6-transaxle_automatic_dual_clutch_7-engine-oil_pump/",
+          "diyDifficulty": "hard",
+          "function": "Pressurizes and circulates oil through the engine's lubrication galleries."
+        },
+        {
+          "id": "timing-chain-tensioner",
+          "name": "Timing Chain Tensioner",
+          "system": "engine",
+          "partNumber": "0PB109508B",
+          "alternateNumbers": ["0PB109507E", "9A110523302", "0PB109570"],
+          "torque": null,
+          "notes": "Listed alongside timing chain 9A110523302 and sprocket 0PB109570.",
+          "sourceUrl": "https://shop.porscheontario.com/2013-porsche-boxster-s-gas_3.4_6-transaxle_automatic_dual_clutch_7-engine-oil_pump/",
+          "diyDifficulty": "hard",
+          "function": "Maintains correct tension on the timing chain to keep cam/crank timing in sync."
+        },
+        {
+          "id": "spark-plug",
+          "name": "Spark Plug",
+          "system": "engine",
+          "partNumber": "99917015190",
+          "alternateNumbers": [],
+          "torque": null,
+          "notes": "Six required for the flat-six. Found under the ignition system diagram.",
+          "sourceUrl": "https://shop.porscheontario.com/2013-porsche-boxster-s-gas_3.4_6-transaxle_automatic_dual_clutch_7-electrical-ignition_system/",
+          "diyDifficulty": "moderate",
+          "function": "Ignites the air-fuel mixture in each combustion chamber via a high-voltage spark."
+        }
+      ]
+    },
+    {
+      "id": "cooling",
+      "label": "Cooling",
+      "components": [
+        {
+          "id": "water-pump",
+          "name": "Water Pump",
+          "system": "cooling",
+          "partNumber": "0PB121035A",
+          "alternateNumbers": ["0PB121010C", "0PB121091A"],
+          "torque": null,
+          "notes": "0PB121010C is the complete water pump assembly; 0PB121091A is the gasket.",
+          "sourceUrl": "https://shop.porscheontario.com/2013-porsche-boxster-s-gas_3.4_6-transaxle_automatic_dual_clutch_7-cooling_system-water_pump/",
+          "diyDifficulty": "moderate",
+          "function": "Circulates coolant between the engine and radiators to regulate temperature."
+        },
+        {
+          "id": "thermostat",
+          "name": "Thermostat",
+          "system": "cooling",
+          "partNumber": "0PB121110A",
+          "alternateNumbers": ["0PB121146", "0PB121688"],
+          "torque": null,
+          "notes": "0PB121146 is the thermostat cover; 0PB121688 is the gasket.",
+          "sourceUrl": "https://shop.porscheontario.com/2013-porsche-boxster-s-gas_3.4_6-transaxle_automatic_dual_clutch_7-cooling_system-water_pump/",
+          "diyDifficulty": "moderate",
+          "function": "Opens and closes to regulate coolant flow and bring the engine to operating temperature."
+        },
+        {
+          "id": "radiator",
+          "name": "Radiator",
+          "system": "cooling",
+          "partNumber": "99110613103",
+          "alternateNumbers": ["99110613203"],
+          "torque": null,
+          "notes": "Left/right side radiators: 99110613103 and 99110613203.",
+          "sourceUrl": "https://shop.porscheontario.com/2013-porsche-boxster-s-gas_3.4_6-transaxle_automatic_dual_clutch_7-cooling_system-radiator/",
+          "diyDifficulty": "hard",
+          "function": "Dissipates heat from the coolant via airflow through its core."
+        }
+      ]
+    },
+    {
+      "id": "brakes",
+      "label": "Brakes",
+      "components": [
+        {
+          "id": "front-brake-pads",
+          "name": "Front Brake Pads",
+          "system": "brakes",
+          "partNumber": "98135193904",
+          "alternateNumbers": ["99135193900", "982698151C"],
+          "torque": null,
+          "notes": "Multiple pad part numbers listed across the front-brakes diagram.",
+          "sourceUrl": "https://shop.porscheontario.com/2013-porsche-boxster-s-gas_3.4_6-transaxle_automatic_dual_clutch_7-brakes-front_brakes/",
+          "diyDifficulty": "moderate",
+          "function": "Clamp against the rotor to create the friction that slows the wheel."
+        },
+        {
+          "id": "front-brake-rotor",
+          "name": "Front Brake Rotor / Disc",
+          "system": "brakes",
+          "partNumber": "98135103201",
+          "alternateNumbers": ["99735140101", "99735140201", "982615301B"],
+          "torque": null,
+          "notes": "Front caliper 98135142402 and bleeder valve 99735291900 also on this diagram.",
+          "sourceUrl": "https://shop.porscheontario.com/2013-porsche-boxster-s-gas_3.4_6-transaxle_automatic_dual_clutch_7-brakes-front_brakes/",
+          "diyDifficulty": "moderate",
+          "function": "Rotating disc the pads grip to convert motion into heat and slow the car."
+        }
+      ]
+    },
+    {
+      "id": "fuel",
+      "label": "Fuel",
+      "components": [
+        {
+          "id": "fuel-injector",
+          "name": "Fuel Injector",
+          "system": "fuel",
+          "partNumber": "9A111012815",
+          "alternateNumbers": ["9A111085903", "9A111086004", "94860623003"],
+          "torque": null,
+          "notes": "Fuel rails 9A111085903/9A111086004 and pressure regulator 94860623003 on same diagram.",
+          "sourceUrl": "https://shop.porscheontario.com/2013-porsche-boxster-s-gas_3.4_6-transaxle_automatic_dual_clutch_7-fuel_system-fuel_injection/",
+          "diyDifficulty": "moderate",
+          "function": "Sprays metered fuel into the intake/combustion chamber for the air-fuel mixture."
+        }
+      ]
+    },
+    {
+      "id": "exhaust",
+      "label": "Exhaust",
+      "components": [
+        {
+          "id": "exhaust-manifold",
+          "name": "Exhaust Manifold (with catalytic converter)",
+          "system": "exhaust",
+          "partNumber": "981113212EX",
+          "alternateNumbers": ["981113211EX", "99711110731"],
+          "torque": null,
+          "notes": "Left/right manifolds 981113211EX / 981113212EX; manifold gasket 99711110731.",
+          "sourceUrl": "https://shop.porscheontario.com/2013-porsche-boxster-s-gas_3.4_6-transaxle_automatic_dual_clutch_7-exhaust_system-exhaust_manifold/",
+          "diyDifficulty": "hard",
+          "function": "Collects exhaust gases from the cylinders and routes them into the exhaust system."
+        }
+      ]
+    },
+    {
+      "id": "steering",
+      "label": "Steering",
+      "components": [
+        {
+          "id": "outer-tie-rod",
+          "name": "Outer Tie Rod End",
+          "system": "steering",
+          "partNumber": "99134713100",
+          "alternateNumbers": ["99134732200", "99134700518"],
+          "torque": null,
+          "notes": "Inner tie rod 99134732200; steering gear (rack) 99134700518.",
+          "sourceUrl": "https://shop.porscheontario.com/2013-porsche-boxster-s-gas_3.4_6-transaxle_automatic_dual_clutch_7-steering-steering_gear_linkage/",
+          "diyDifficulty": "moderate",
+          "function": "Connects the steering rack to the wheel knuckle and sets toe alignment."
+        }
+      ]
+    },
+    {
+      "id": "hvac",
+      "label": "HVAC",
+      "components": [
+        {
+          "id": "ac-compressor",
+          "name": "A/C Compressor",
+          "system": "hvac",
+          "partNumber": "9A112601105",
+          "alternateNumbers": [],
+          "torque": null,
+          "notes": "Discharge hose 9A157309709 and liquid hose 9A157309908 on same diagram.",
+          "sourceUrl": "https://shop.porscheontario.com/2013-porsche-boxster-s-gas_3.4_6-transaxle_automatic_dual_clutch_7-hvac-compressor/",
+          "diyDifficulty": "hard",
+          "function": "Pressurizes refrigerant to drive the air-conditioning cooling cycle."
+        }
+      ]
+    },
+    {
+      "id": "electrical",
+      "label": "Electrical",
+      "components": [
+        {
+          "id": "ignition-coil",
+          "name": "Ignition Coil",
+          "system": "electrical",
+          "partNumber": "9A160210407",
+          "alternateNumbers": [],
+          "torque": null,
+          "notes": "One per cylinder. ECM 99161860203 and crankshaft sensor 9P1906401A on same diagram.",
+          "sourceUrl": "https://shop.porscheontario.com/2013-porsche-boxster-s-gas_3.4_6-transaxle_automatic_dual_clutch_7-electrical-ignition_system/",
+          "diyDifficulty": "easy",
+          "function": "Steps up battery voltage to the high voltage needed to fire the spark plug."
+        }
+      ]
+    },
+    {
+      "id": "transmission",
+      "label": "Transmission/Transaxle",
+      "components": [
+        {
+          "id": "pdk-transaxle",
+          "name": "Automatic Transaxle (PDK)",
+          "system": "transmission",
+          "partNumber": "9G230002105",
+          "alternateNumbers": ["99111402001", "9G242603310"],
+          "torque": null,
+          "notes": "7-speed PDK dual-clutch. 99111402001 is the drive plate; 9G242603310 the shift control cable.",
+          "sourceUrl": "https://shop.porscheontario.com/2013-porsche-boxster-s-gas_3.4_6-transaxle_automatic_dual_clutch_7-automatic_transaxle-automatic_transaxle/",
+          "diyDifficulty": "hard",
+          "function": "The dual-clutch gearbox transmitting engine power to the rear axle."
+        }
+      ]
+    },
+    {
+      "id": "suspension",
+      "label": "Suspension",
+      "components": [
+        {
+          "id": "front-lower-control-arm",
+          "name": "Front Lower Control Arm",
+          "system": "suspension",
+          "partNumber": "98133104303",
+          "alternateNumbers": ["98133105302", "982505052J"],
+          "torque": null,
+          "notes": "Upper control arm 98133105302; front knuckle 982505052J on same diagram.",
+          "sourceUrl": "https://shop.porscheontario.com/2013-porsche-boxster-s-gas_3.4_6-transaxle_automatic_dual_clutch_7-front_suspension-shocks_components/",
+          "diyDifficulty": "moderate",
+          "function": "Locates the wheel knuckle and allows controlled vertical wheel movement."
+        }
+      ]
+    },
+    {
+      "id": "wheels",
+      "label": "Wheels",
+      "components": [
+        {
+          "id": "alloy-wheel",
+          "name": "Alloy Wheel",
+          "system": "wheels",
+          "partNumber": "981362120058Z8",
+          "alternateNumbers": ["981362122058Z8", "WHT006978"],
+          "torque": null,
+          "notes": "Many size/finish variants exist; WHT006978 is the wheel bolt.",
+          "sourceUrl": "https://shop.porscheontario.com/2013-porsche-boxster-s-gas_3.4_6-transaxle_automatic_dual_clutch_7-front_suspension-wheels/",
+          "diyDifficulty": "easy",
+          "function": "The road wheel that mounts the tire and bolts to the hub."
+        }
+      ]
+    },
+    {
+      "id": "body",
+      "label": "Body",
+      "components": [
+        {
+          "id": "hood-front-lid",
+          "name": "Hood / Front Lid",
+          "system": "body",
+          "partNumber": "99151101104GRV",
+          "alternateNumbers": ["99151155100", "99151115103"],
+          "torque": null,
+          "notes": "99151155100 is the lift cylinder (gas strut); 99151115103 a hinge.",
+          "sourceUrl": "https://shop.porscheontario.com/2013-porsche-boxster-s-gas_3.4_6-transaxle_automatic_dual_clutch_7-body_hardware-hood/",
+          "diyDifficulty": "moderate",
+          "function": "The front luggage-compartment lid panel of the body."
+        }
+      ]
+    }
+  ]
+}

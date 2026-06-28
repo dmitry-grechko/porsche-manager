@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Internals render</title>
+<style>html,body{margin:0;height:100%;background:#eef0f2;overflow:hidden}#c{display:block;width:100vw;height:100vh}</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<script type="importmap">
+{ "imports": {
+  "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+  "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+}}
+</script>
+<script type="module">
+import * as THREE from 'three';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+
+const canvas = document.getElementById('c');
+const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true, preserveDrawingBuffer: true });
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+renderer.setSize(innerWidth, innerHeight);
+renderer.shadowMap.enabled = true;
+renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = 1.1;
+
+const scene = new THREE.Scene();
+scene.background = null; // transparent → composites onto the stage
+const pmrem = new THREE.PMREMGenerator(renderer);
+scene.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
+
+const camera = new THREE.PerspectiveCamera(35, innerWidth / innerHeight, 0.1, 1000);
+
+const key = new THREE.DirectionalLight(0xffffff, 2.4); key.position.set(6, 10, 7); key.castShadow = true;
+key.shadow.mapSize.set(2048, 2048); key.shadow.bias = -0.0002;
+scene.add(key);
+scene.add(new THREE.HemisphereLight(0xffffff, 0x8d8f94, 0.7));
+const rim = new THREE.DirectionalLight(0xbfd4ff, 0.9); rim.position.set(-8, 5, -6); scene.add(rim);
+
+const loader = new GLTFLoader();
+const load = (url) => new Promise((res, rej) => loader.load(url, (g) => res(g.scene), undefined, rej));
+
+function sizeOf(obj) { const b = new THREE.Box3().setFromObject(obj); const s = new THREE.Vector3(); b.getSize(s); return s; }
+
+const root = new THREE.Group();
+scene.add(root);
+
+const CENTER = new THREE.Vector3();
+
+(async () => {
+  const [engine, trans] = await Promise.all([
+    load('/models/components/engine.glb'),
+    load('/models/components/trans.glb'),
+  ]);
+
+  // powertrain: engine front, transaxle tucked behind it
+  const eSize = sizeOf(engine);
+  engine.position.set(0, 0, 0);
+  trans.position.set(0, -eSize.y * 0.04, -eSize.z * 0.78);
+
+  root.add(engine, trans);
+  root.traverse((o) => { if (o.isMesh) { o.castShadow = true; o.receiveShadow = true; } });
+
+  const box = new THREE.Box3().setFromObject(root);
+  box.getCenter(CENTER);
+  const r = box.getBoundingSphere(new THREE.Sphere()).radius;
+  window.__radius = r;
+
+  const ground = new THREE.Mesh(new THREE.PlaneGeometry(r * 12, r * 12), new THREE.ShadowMaterial({ opacity: 0.18 }));
+  ground.rotation.x = -Math.PI / 2; ground.position.y = box.min.y - 0.02; ground.receiveShadow = true; scene.add(ground);
+  key.shadow.camera.left = -r * 2; key.shadow.camera.right = r * 2; key.shadow.camera.top = r * 2; key.shadow.camera.bottom = -r * 2; key.shadow.camera.far = r * 10; key.shadow.camera.updateProjectionMatrix();
+
+  fit();
+  window.__ready = true;
+})().catch((e) => { window.__err = String(e); });
+
+function fit() {
+  const r = window.__radius; if (!r) return;
+  camera.aspect = (canvas.clientWidth || innerWidth) / (canvas.clientHeight || innerHeight);
+  const vFov = camera.fov * Math.PI / 180;
+  const hFov = 2 * Math.atan(Math.tan(vFov / 2) * camera.aspect);
+  const dist = r / Math.sin(Math.min(vFov, hFov) / 2) * 0.6;
+  const dir = new THREE.Vector3(0.55, 0.42, 0.82).normalize();
+  camera.position.copy(CENTER).addScaledVector(dir, dist);
+  camera.lookAt(CENTER);
+  camera.near = dist / 100; camera.far = dist * 100; camera.updateProjectionMatrix();
+}
+
+function loop() { fit(); renderer.render(scene, camera); requestAnimationFrame(loop); }
+loop();
+window.__grab = () => renderer.domElement.toDataURL('image/png');
+addEventListener('resize', () => { camera.aspect = innerWidth / innerHeight; camera.updateProjectionMatrix(); renderer.setSize(innerWidth, innerHeight); });
+</script>
+</body>
+</html>

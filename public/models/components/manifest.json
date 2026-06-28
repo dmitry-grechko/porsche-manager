@@ -1,0 +1,74 @@
+[
+  {
+    "id": "engine",
+    "label": "3.4L Flat-Six (MA1)",
+    "system": "Engine",
+    "glb": "/models/components/engine.glb",
+    "node": "engine",
+    "hotspot3d": "0 1.2 0"
+  },
+  {
+    "id": "trans",
+    "label": "PDK Transaxle",
+    "system": "Transmission",
+    "glb": "/models/components/trans.glb",
+    "node": "transaxle",
+    "hotspot3d": "0 0 -1.4"
+  },
+  {
+    "id": "exhaust",
+    "label": "Exhaust & Sport System",
+    "system": "Exhaust",
+    "glb": "/models/components/exhaust.glb",
+    "node": "exhaust",
+    "hotspot3d": "0 -0.6 -1.6"
+  },
+  {
+    "id": "fbrakes",
+    "label": "Front Brake (315mm)",
+    "system": "Brakes",
+    "glb": "/models/components/fbrakes.glb",
+    "node": "frontBrake",
+    "hotspot3d": "0 0.78 0"
+  },
+  {
+    "id": "rbrakes",
+    "label": "Rear Brake (299mm)",
+    "system": "Brakes",
+    "glb": "/models/components/rbrakes.glb",
+    "node": "rearBrake",
+    "hotspot3d": "0 0.7 0"
+  },
+  {
+    "id": "cooling",
+    "label": "Front Radiator & Condenser",
+    "system": "Cooling",
+    "glb": "/models/components/cooling.glb",
+    "node": "coolingRadiator",
+    "hotspot3d": "0 0 0"
+  },
+  {
+    "id": "oil",
+    "label": "Oil Filter Element",
+    "system": "Engine",
+    "glb": "/models/components/oil.glb",
+    "node": "oilFilter",
+    "hotspot3d": "0 0 0"
+  },
+  {
+    "id": "airfilter",
+    "label": "Panel Air Filter",
+    "system": "Engine",
+    "glb": "/models/components/airfilter.glb",
+    "node": "airFilter",
+    "hotspot3d": "0 0 0"
+  },
+  {
+    "id": "plugs",
+    "label": "Spark Plugs & Coils",
+    "system": "Engine",
+    "glb": "/models/components/plugs.glb",
+    "node": "coilPlug",
+    "hotspot3d": "0 0.1 0"
+  }
+]
