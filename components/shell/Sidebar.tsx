@@ -1,9 +1,13 @@
 'use client';
 
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import { fmtMiles } from '@/lib/data';
 import { useVehicle } from '@/lib/vehicle-context';
+import { createClient } from '@/lib/supabase/client';
+import { isAdminEmail } from '@/lib/admin';
+import { DEMO_MODE } from '@/lib/demo';
 
 const NAV: { no: string; label: string; href: string }[] = [
   { no: '01', label: 'Garage', href: '/garage' },
@@ -25,6 +29,16 @@ export default function Sidebar({
   const pathname = usePathname();
   const router = useRouter();
   const { vehicle: VEHICLE } = useVehicle();
+
+  // The admin usage panel is visible only to the admin account (or in demo mode,
+  // so it can be tested without a real session). The /api/admin route enforces
+  // this server-side regardless — this just controls the nav item.
+  const [isAdmin, setIsAdmin] = useState(DEMO_MODE);
+  useEffect(() => {
+    if (DEMO_MODE) return;
+    createClient().auth.getUser().then(({ data }) => setIsAdmin(isAdminEmail(data.user?.email)));
+  }, []);
+  const items = isAdmin ? [...NAV, { no: '06', label: 'Admin', href: '/admin' }] : NAV;
 
   return (
     <aside
@@ -55,7 +69,7 @@ export default function Sidebar({
       </div>
 
       <nav style={{ padding: '14px 12px', flex: 1 }}>
-        {NAV.map((it) => {
+        {items.map((it) => {
           const on =
             pathname === it.href ||
             (it.href === '/history' && pathname.startsWith('/history')) ||

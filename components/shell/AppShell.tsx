@@ -14,6 +14,7 @@ const PAGE_META: Record<string, [string, string]> = {
   '/plans': ['MAINTENANCE', 'Service Plans'],
   '/faults': ['DIAGNOSTICS', 'Fault Finding'],
   '/settings': ['CONFIGURATION', 'Settings & MCP'],
+  '/admin': ['ADMIN', 'Usage Overview'],
 };
 
 export default function AppShell({
