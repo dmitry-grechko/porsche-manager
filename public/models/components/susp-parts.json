@@ -288,17 +288,6 @@
 "componentId": "susp"
 },
 {
-"id": "SUSP-STEER-003",
-"node": "steeringWheel",
-"label": "Steering Wheel \u2014 Sport Chrono Multi-Function",
-"assembly": "Steering",
-"system": "Suspension",
-"tier": "primary",
-"partNumber": "991.347.803.35",
-"function": "Sport Chrono multi-function steering wheel providing driver interface for steering, horn, audio, telephone, and Sport Chrono lap timer functions.",
-"componentId": "susp"
-},
-{
 "id": "SUSP-STEER-004-L",
 "node": "tieRodLeft",
 "label": "Tie Rod and Tie Rod End (Left)",
